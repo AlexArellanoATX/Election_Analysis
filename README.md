@@ -11,7 +11,9 @@ An employee of the Colorado Board of Elections has asked us to complete the foll
 
 ## Resources
 - Data source provided:  election_results.csv
--Software utilized: Python Version 3.8.3, Visual Studio Code Version: 1.47.3
+-Software utilized: 
+Python Version 3.8.3 
+Visual Studio Code Version: 1.47.3
 
 ## Summary
 The analysis of the election data determine that:
