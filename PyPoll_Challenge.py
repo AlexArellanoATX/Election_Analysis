@@ -105,28 +105,22 @@ for county_options,county_votes in county_votes.items():
 
     # 6d: Print the county results to the terminal.
     county_results = (
-        f"{county_options}: {percentoftotal_county:.1f}% ({county_vote_count:,})")
+        f"{county_options}: {percentoftotal_county:.1f}% ({county_vote_count:,})\n")
 
     print(county_results)
 
-    # ISSUE*** need print county_results with counties on separate lines in text file***
     # 6e: Save the county votes to a text file.
     with open(file_to_save, "a") as txt_file:
         txt_file.write(county_results)
 
         # 6f: Write a decision statement to determine the winning county and get its vote count.
 
-    if (county_vote_count) > (largestcounty_count): #and (vote_percentage > winning_percentage):
-        # print("WE ARE IN THE IF STATEMENT++++++++++++++++++&&&&&&&&&&&&")
-        #print(county_vote_count)
-        # print(largestcounty_count)
-        # print("WE ARE IN THE IF STATEMENT++++++++++++++++++&&&&&&&&&&&&")
+    if (county_vote_count) > (largestcounty_count): 
+        
         largestcounty_count = county_vote_count
         #print(largestcounty_count)
 
-        largest_county_turnout = county_options  #*****Gotta FIX THIS-******
-#print(largest_county_turnout)
-
+        largest_county_turnout = county_options 
 
     # 7: Print the county with the largest turnout to the terminal.
 
@@ -137,11 +131,9 @@ largest_county_summary = (
 print(largest_county_summary)
 
     # 8: Save the county with the largest turnout to a text file.
-#open(txt_file).write(largest_county_summary)
 with open(file_to_save, "a") as txt_file:
     txt_file.write(largest_county_summary)
 
-# ------------- COMMENTED EVERTHING OUT UNDER THIS LINE
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
 
@@ -151,8 +143,7 @@ with open(file_to_save, "a") as txt_file:
         candidate_results = (
             f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
 
-        # Print each candidate's voter count and percentage to the
-        # terminal.
+        # Print each candidate's voter count and percentage to the terminal.
         print(candidate_results)
         #  Save the candidate results to our text file.
         txt_file.write(candidate_results)
