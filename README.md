@@ -25,8 +25,17 @@ Software utilized:
 * Visual Studio Code Version: 1.47.3
 
 ## Election-Audit Results
-Using the Python3 programming language and a code editor called VS Code, we wrote code that opens and accesses the provided data and uses lists and dictionaries to tabulate data about the votes each candidate and each county had. ![Python_code1](./Additional_resources/Python_code_snip1.png)
-The code uses'for' loops and conditional statements to run through the entire dataset, and assign the proper counts to each candidate and county. ![Python_code1](./Additional_resources/Python_code_snip2.png)The code also calculates the percentage of total for both candidate voers and the votes cast in each countty and outputs the results both to the computer's 'Terminal' and a text file. ![Python_code1](./Additional_resources/Python_code_snip3.png)
+Using the Python3 programming language and a code editor called VS Code, we wrote code that opens and accesses the provided data and uses lists and dictionaries to tabulate data about the votes each candidate and each county had. 
+
+![Python_code1](./Additional_resources/Python_code_snip1.png)
+
+The code uses'for' loops and conditional statements to run through the entire dataset, and assign the proper counts to each candidate and county. 
+![Python_code2](./Additional_resources/Python_code_snip2.png)
+
+The code also calculates the percentage of total for both candidate voers and the votes cast in each countty and outputs the results both to the computer's 'Terminal' and a text file that can be shared and used in reports. 
+
+![Python_code3](./Additional_resources/Python_code_Snip3.png) 
+
 
 
 Results of the analysis follow:
@@ -49,8 +58,11 @@ Results of the analysis follow:
 
 * The winner of the election based on popular vote was: Diana DeGette, who received 272,892 votes, which was 73.8% of all the votes cast in this election.
 
-**The output file we created, contains answers to the questions the Colorado Board of Elections was interested in seeing:**
+**Our code prints out the election audit information requested by the Colorado Board of Elections:**
+
+
 ![Text_file](./Additional_resources/Text_file_created_for_COBoardElections.png)
+
 
 ## Election Audit Summary
 The analysis of the election data determines the winner of the election, as well as breaking down the votes received by each candidate and calculates the percentage of the total votes cast. This analysis also looks at voter turnout in each of the the 3 counties in the precint that was analyzed. The code written for this analysis can be used with to analyze and audit other elections, and since this code is written using the very versatile Python language, it can be modified to look at additional data as well as different datasets and extract valuable insights.
